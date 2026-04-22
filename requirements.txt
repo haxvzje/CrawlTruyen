@@ -1,0 +1,4 @@
+argparse
+requests
+EbookLib
+beautifulsoup4
