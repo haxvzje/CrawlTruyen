@@ -28,11 +28,11 @@ jobs:
 
     - name: Build EXE with PyInstaller
       run: |
-        pyinstaller --onefile main.py
+        pyinstaller --onefile --name "crawltruyen-${{ github.ref_name }}" main.py
 
     - name: Create Release and Upload Asset
       uses: softprops/action-gh-release@v2
       with:
-        files: dist/crawltruyen.exe
+        files: dist/*.exe
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
