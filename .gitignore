@@ -1,1 +1,5 @@
 /output
+/.github/agents
+.github/plan.md
+.github/copilot-instructions.md
+__pycache__/main.cpython-314.pyc
